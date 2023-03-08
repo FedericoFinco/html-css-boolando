@@ -9,7 +9,8 @@ body{background-color: #222;
 height: 3000px;
 }
 
-img{display: block;}
+img{display: block;
+width: 100%;}
 
 a{all: unset;}
 
@@ -50,10 +51,19 @@ a:hover{
 
 .wrap{flex-wrap: wrap;}
 
+.z0{z-index: 0;}
+.pRel{position: relative;}
 .posFixT{position: fixed;
-    top: 0;}
+    top: 0;
+    z-index: 100;
+}
+
 .posFixB{position: fixed;
-    bottom: 0;}
+    bottom: 0;
+}
+
+.bgGreen{background-color: #008000;}
+.bgRed{background-color: #ff0000;}
 
 /*************** HEADER ************/
 
@@ -62,6 +72,7 @@ a:hover{
     width: 100%;
     padding: 1em;
     color: white;
+    z-index: 100;
 }
 
 .col75 > img{
@@ -70,6 +81,21 @@ a:hover{
 
 /*************** MAIN ****************/
 
+.pAbsBot{position: absolute;
+bottom: 7%;
+left: 0;}
+
+.pAbsTop{position: absolute;
+    top: 10%;
+    right: 5%;}
+
+.pAbsTop:hover{
+    color: crimson;
+}
+.cardTop{
+    width: 100%;
+    height: 92%;
+}
 .card {
     height: 700px;
     width: calc(100%/3 - 20px);
@@ -84,6 +110,7 @@ a:hover{
 
 .card:hover .img2{
     display: block;
+    width: 100%;
 }
 .card:hover .img1{
     display: none;
