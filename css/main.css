@@ -29,9 +29,11 @@ a:hover{
 
 .b{font-weight: 600;}
 
+.marB1{margin-bottom: 1rem;}
+.marT1{margin-top: 1rem;}
 .marR{margin-right: 0.5em;}
 .marTB{margin-top: 8rem;
-    margin-bottom;: 8rem;}
+    margin-bottom: 8rem;}
 
 .tAliLeft{text-align: left;}
 
@@ -45,13 +47,13 @@ a:hover{
 .justifyFE{justify-content: flex-end;}
 .justifyFS{justify-content: flex-start;}
 .alignCen{align-items: center;}
-.
+
 .wrap{flex-wrap: wrap;}
 
-.posFix{position: fixed;
-top: 0;}
-
-
+.posFixT{position: fixed;
+    top: 0;}
+.posFixB{position: fixed;
+    bottom: 0;}
 
 /*************** HEADER ************/
 
@@ -69,7 +71,9 @@ top: 0;}
 /*************** MAIN ****************/
 
 .card {
+    height: 700px;
     width: calc(100%/3 - 20px);
+    margin-bottom: 4rem;
 }
 
 .img2{
@@ -77,6 +81,7 @@ top: 0;}
 }
 
 /* carta 1 con display none */
+
 .card:hover .img2{
     display: block;
 }
@@ -86,3 +91,17 @@ top: 0;}
 .card > img{
     width: 100%;
 }
+
+
+/************** FOOTER ********/
+
+.fixFoot{
+    background-color: #222;
+    width: 100%;
+    padding: 1em;
+    color: white;
+    font-size: 10px;
+}
+
+.fixFoot i{font-size: 15px;
+margin-left: 1em;}
