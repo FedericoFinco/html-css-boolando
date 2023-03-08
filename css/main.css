@@ -12,7 +12,8 @@ height: 3000px;
 img{display: block;
 width: 100%;}
 
-a{all: unset;}
+a{all: unset;
+    cursor: pointer;}
 
 a:hover{
     text-decoration: underline;
@@ -52,24 +53,19 @@ a:hover{
 .justifyFE{justify-content: flex-end;}
 .justifyFS{justify-content: flex-start;}
 .alignCen{align-items: center;}
-
 .wrap{flex-wrap: wrap;}
 
 .z0{z-index: 0;}
 .pRel{position: relative;}
-.posFixT{position: fixed;
-    top: 0;
-    z-index: 100;
-}
-
-.posFixB{position: fixed;
-    bottom: 0;
-}
 
 .bgGreen{background-color: #008000;}
 .bgRed{background-color: #ff0000;}
 
 /*************** HEADER ************/
+.posFixT{position: fixed;
+    top: 0;
+    z-index: 100;
+}
 
 .fixHead{
     background-color: #ff6900;
@@ -91,7 +87,8 @@ left: 0;}
 
 .pAbsTop{position: absolute;
     top: 10%;
-    right: 5%;}
+    right: 5%;
+    font-size: 2rem;}
 
 .pAbsTop:hover{
     color: crimson;
@@ -137,3 +134,7 @@ left: 0;}
 
 .fixFoot i{font-size: 15px;
 margin-left: 1em;}
+
+.posFixB{position: fixed;
+    bottom: 0;
+}
