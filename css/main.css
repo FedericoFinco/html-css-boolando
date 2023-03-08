@@ -8,25 +8,8 @@
 body{background-color: #222;
 height: 3000px;
 }
-.txtW{color: white;}
 
-.b{font-weight: 600;}
-
-.marR{margin-right: 0.5em;}
-
-.tAliLeft{text-align: left;}
-
-.col15{width: 15%;}
-.col70{width: 70%;}
-
-.flex{display: flex;}
-.justifySB{justify-content: space-between;}
-.justifyCen{justify-content: center;}
-.justifyFE{justify-content: flex-end;}
-.alignCen{align-items: center;}
-
-
-.posFix{position: fixed;}
+img{display: block;}
 
 a{all: unset;}
 
@@ -35,6 +18,43 @@ a:hover{
     color: #3d5afe;
 }
 
+
+/***************** UTILITY CLASSES *******************/
+.boxed{
+    max-width: 1390px;
+    margin: 0 auto;
+}
+
+.txtW{color: white;}
+
+.b{font-weight: 600;}
+
+.marR{margin-right: 0.5em;}
+.marTB{margin-top: 8rem;
+    margin-bottom;: 8rem;}
+
+.tAliLeft{text-align: left;}
+
+.col15{width: 15%;}
+.col70{width: 70%;}
+
+.flex{display: flex;}
+.fCol{flex-direction: column;}
+.justifySB{justify-content: space-between;}
+.justifyCen{justify-content: center;}
+.justifyFE{justify-content: flex-end;}
+.justifyFS{justify-content: flex-start;}
+.alignCen{align-items: center;}
+.
+.wrap{flex-wrap: wrap;}
+
+.posFix{position: fixed;
+top: 0;}
+
+
+
+/*************** HEADER ************/
+
 .fixHead{
     background-color: #ff6900;
     width: 100%;
@@ -42,11 +62,27 @@ a:hover{
     color: white;
 }
 
-.boxed{
-    max-width: 1390px;
-    margin: 0 auto;
-}
-
 .col75 > img{
     height: 2rem;
+}
+
+/*************** MAIN ****************/
+
+.card {
+    width: calc(100%/3 - 20px);
+}
+
+.img2{
+    display: none;
+}
+
+/* carta 1 con display none */
+.card:hover .img2{
+    display: block;
+}
+.card:hover .img1{
+    display: none;
+}
+.card > img{
+    width: 100%;
 }
