@@ -5,9 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{background-color: #222;
+/* body{background-color: #222;
 height: 3000px;
-}
+} */
 
 img{display: block;
 width: 100%;}
@@ -26,10 +26,14 @@ a:hover{
     margin: 0 auto;
 }
 
+.big{font-size: 1.3rem;}
+.red{color: red;}
+.lt{text-decoration: line-through;}
 .txtW{color: white;}
 
 .b{font-weight: 600;}
 
+.pad{padding: 0.5rem;}
 .marB1{margin-bottom: 1rem;}
 .marT1{margin-top: 1rem;}
 .marR{margin-right: 0.5em;}
@@ -92,12 +96,13 @@ left: 0;}
 .pAbsTop:hover{
     color: crimson;
 }
+.row9{height: 9%;}
 .cardTop{
     width: 100%;
-    height: 92%;
+    height: 89%;
 }
 .card {
-    height: 700px;
+    height: 720px;
     width: calc(100%/3 - 20px);
     margin-bottom: 4rem;
 }
