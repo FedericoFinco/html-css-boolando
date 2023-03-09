@@ -112,14 +112,14 @@ left: 0;}
 
 .card:hover .img2{
     display: block;
-    width: 100%;
+    /* width: 100%; */
 }
 .card:hover .img1{
     display: none;
 }
-.card > img{
+/* .card > img{
     width: 100%;
-}
+}    */
 
 
 /************** FOOTER ********/
